@@ -1,0 +1,5 @@
+-r base.txt
+django-extensions
+werkzeug
+django-debug-toolbar
+django-nose

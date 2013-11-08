@@ -1,0 +1,4 @@
+psycopg2
+django<1.7
+South
+django-admin-bootstrapped
