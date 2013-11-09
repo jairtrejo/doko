@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<title>Doku</title>
+<script src="http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js"></script>
+<link href="http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css" rel="stylesheet">
+<!--[if lte IE 8]>
+	<link href="http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.ie.css" rel="stylesheet">
+<![endif]-->
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script type="text/javascript">
+var map = L.mapbox.map('map', 'thewarpaint.g829e4h1')
+  .setView([19.39313684811727, -99.17053699493408], 16);
+</script>
+</body>
+</html>
