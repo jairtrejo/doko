@@ -1,0 +1,16 @@
+body{
+    font-family: 'Open Sans', 'sans-serif';
+    padding-top: 60px;
+}
+h1{
+    font-family: 'Leckerli One', 'cursive';
+    font-size: 6em;
+    text-align: center;
+    color: #A92429;
+}
+.container{
+    width: 700px;
+}
+.project-lookup{
+    padding: 60px 0;
+}
