@@ -1,5 +1,5 @@
 """
-WSGI config for doko project.
+WSGI config for rohan project.
 
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable
@@ -15,7 +15,7 @@ framework.
 """
 import os
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "doko.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rohan.settings")
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
@@ -23,6 +23,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "doko.settings")
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 
-# Apply WSGI middleware here.
-# from helloworld.wsgi import HelloWorldApplication
-# application = HelloWorldApplication(application)
+# OpBeat middleware
+if 'OPBEAT_APP' in os.environ:
+    from opbeat.contrib.django.middleware.wsgi import Opbeat
+    application = Opbeat(application)

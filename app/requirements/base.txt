@@ -1,4 +1,7 @@
+# Core
+Pillow
 psycopg2
 django<1.7
 South
+# Extensions
 django-admin-bootstrapped

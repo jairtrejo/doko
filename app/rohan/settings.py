@@ -2,7 +2,7 @@
 import os
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
-# Django settings for doko project.
+# Django settings for rohan project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'doko',
+        'NAME': 'rohan',
         'USER': 'vagrant',
     }
 }
@@ -73,7 +73,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '#NF4~Y4lijKX//p8+5y^+[q)Rf$*Pq2p~y2UC!_Eu#;2"{nj+I}"]'
+SECRET_KEY = 'lee8paes2eePhooM0Quoh0xailiaghaem6m'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -92,10 +92,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'doko.urls'
+ROOT_URLCONF = 'rohan.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'doko.wsgi.application'
+WSGI_APPLICATION = 'rohan.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -124,7 +124,6 @@ INSTALLED_APPS = (
     'django.contrib.gis',
     'django_admin_bootstrapped',
     'django.contrib.admin',
-    'django_nose',
     'south',
     'django_extensions',
     'debug_toolbar',

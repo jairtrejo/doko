@@ -2,4 +2,5 @@
 django-extensions
 werkzeug
 django-debug-toolbar
-django-nose
+pytest
+pytest-django
