@@ -163,9 +163,6 @@ LOGIN_REDIRECT_URL = '/'
 
 # Debug toolbar
 INTERNAL_IPS = ('10.0.2.2',)
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-}
 
 # Tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
