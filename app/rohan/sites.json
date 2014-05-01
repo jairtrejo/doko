@@ -1,0 +1,10 @@
+[
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "rohan.dev:8000",
+      "name": "rohan.cincoovnis.com (development)"
+    }
+  }
+]

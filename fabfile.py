@@ -96,6 +96,7 @@ def syncdb():
     with cd(env.site_dir):
         run("python manage.py syncdb --noinput")
         run("python manage.py migrate")
+        run("python manage.py loaddata rohan/sites.json")
 
 
 @task

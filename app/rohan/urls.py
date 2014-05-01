@@ -15,5 +15,6 @@ urlpatterns = (
         '',
         url('^$', HomeView.as_view(), name='home'),
         url(r'^admin/', include(admin.site.urls)),
+        url(r'^social/', include('socialregistration.urls', namespace='socialregistration')),
     )
 )

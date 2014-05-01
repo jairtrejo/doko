@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'django_extensions',
+    'socialregistration',
     'debug_toolbar',
 )
 
