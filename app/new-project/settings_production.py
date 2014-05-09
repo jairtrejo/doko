@@ -8,17 +8,17 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
-    'rohan.cincoovnis.com',
-    'www.rohan.cincoovnis.com',
+    'new-project.cincoovnis.com',
+    'www.new-project.cincoovnis.com',
 ]
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
 SITE_ID = 1
 
-if "ROHAN_DATABASE_URL" in os.environ:
+if "NEW-PROJECT_DATABASE_URL" in os.environ:
     urlparse.uses_netloc.append("postgres")
-    url = urlparse.urlparse(os.environ["ROHAN_DATABASE_URL"])
+    url = urlparse.urlparse(os.environ["NEW-PROJECT_DATABASE_URL"])
     DATABASES = {
         "default": {
             "ENGINE": {
@@ -32,8 +32,8 @@ if "ROHAN_DATABASE_URL" in os.environ:
         }
     }
 
-MEDIA_ROOT = os.path.join(os.environ["ROHAN_DATA_DIR"], "site_media", "media")
-STATIC_ROOT = os.path.join(os.environ["ROHAN_DATA_DIR"], "site_media", "static")
+MEDIA_ROOT = os.path.join(os.environ["NEW-PROJECT_DATA_DIR"], "site_media", "media")
+STATIC_ROOT = os.path.join(os.environ["NEW-PROJECT_DATA_DIR"], "site_media", "static")
 
 MEDIA_URL = "/site_media/media/"
 STATIC_URL = "/site_media/static/"

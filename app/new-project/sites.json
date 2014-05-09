@@ -1,0 +1,10 @@
+[
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "new-project.dev:8000",
+      "name": "new-project.cincoovnis.com (development)"
+    }
+  }
+]

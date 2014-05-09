@@ -31,11 +31,11 @@ def production():
     """
     Servidor de producción
     """
-    env.user = 'rohan'
-    env.hosts = ['rohan.cincoovnis.com']
+    env.user = 'new-project'
+    env.hosts = ['new-project.cincoovnis.com']
 
     # Directorio del sitio
-    env.site_dir = '/var/www/rohan.cincoovnis.com'
+    env.site_dir = '/var/www/new-project.cincoovnis.com'
 
 
 #
@@ -53,7 +53,7 @@ def bootstrap():
     run('sudo su -c "/home/vagrant/bootstrap/postgresql.sh" postgres')
     run('sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so')
 
-    run('createdb --template postgisdb rohan')
+    run('createdb --template postgisdb new-project')
 
     syncdb()
 
@@ -62,8 +62,8 @@ def bootstrap():
 def resetdb():
     require("site_dir")
 
-    run("dropdb rohan")
-    run('createdb --template postgisdb rohan')
+    run("dropdb new-project")
+    run('createdb --template postgisdb new-project')
 
     syncdb()
 
@@ -96,7 +96,7 @@ def syncdb():
     with cd(env.site_dir):
         run("python manage.py syncdb --noinput")
         run("python manage.py migrate")
-        run("python manage.py loaddata rohan/sites.json")
+        run("python manage.py loaddata new-project/sites.json")
 
 
 @task
