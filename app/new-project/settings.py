@@ -8,7 +8,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Jair Trejo', 'jair@jairtrejo.mx'),
+    ('New Admin', 'new_admin@new-project.com'),
 )
 
 MANAGERS = ADMINS
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'rohan',
+        'NAME': 'new-project',
         'USER': 'vagrant',
     }
 }
@@ -73,7 +73,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'lee8paes2eePhooM0Quoh0xailiaghaem6m'
+SECRET_KEY = 'lee8paeskjaha8u1j19sakamau81js9'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -92,10 +92,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'rohan.urls'
+ROOT_URLCONF = 'new-project.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'rohan.wsgi.application'
+WSGI_APPLICATION = 'new-project.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
