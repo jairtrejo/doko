@@ -18,7 +18,7 @@ Inside root directory:
 
 ## Features
 
- - Django 1.6
+ - Django 1.7
  - PostgreSQL with PostGIS
  - Django bootstrapped admin
  - Werkzeug debugger
